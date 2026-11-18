@@ -1,0 +1,100 @@
+question_id,concept_id,mapping_reason,confidence
+bst_height,binary_search_trees,Activity explicitly concerns a Binary Search Tree.,high
+tree_height,trees,Activity concerns trees or graph representation.,medium
+similar_trees,trees,Activity concerns trees or graph representation.,medium
+balance,binary_search_trees,Calculates balance factors in a BST.,high
+bfs,bfs,Activity explicitly implements Breadth-First Search.,high
+right_bfs,bfs,Activity explicitly implements Breadth-First Search.,high
+bubble_sort_step_by_step,sorting,Activity concerns sorting or partitioning.,high
+build_heap,heaps,Activity explicitly concerns heaps.,high
+binary_search,arrays,Sequence-search activity; arrays is the closest approved concept.,medium
+recursive_binary_search,recursion,Activity explicitly requires or focuses on recursion.,medium
+bst_search,binary_search_trees,Activity explicitly concerns a Binary Search Tree.,high
+recursive_linear_search,recursion,Activity explicitly requires or focuses on recursion.,medium
+check_tree,graphs,Checks connectivity and cycles in an undirected graph.,high
+count_leaves,binary_search_trees,Counts leaf nodes in a BST.,high
+count_internal_nodes_bst,binary_search_trees,Activity explicitly concerns a Binary Search Tree.,high
+negative_counting_sort,sorting,Activity concerns sorting or partitioning.,high
+counting_sort_step_by_step,sorting,Activity concerns sorting or partitioning.,high
+two_add_up,arrays,Finds two values in an integer array.,high
+down_n,arrays,Selects the n smallest elements from a sequence.,high
+element_at_stack,stacks,Activity explicitly uses a stack.,high
+leftover_element,arrays,Compares two integer arrays.,high
+duplicate_elements,arrays,Checks duplicates using an array.,high
+routing_bst,binary_search_trees,Activity explicitly concerns a Binary Search Tree.,high
+find_element,arrays,Sequence-search activity; arrays is the closest approved concept.,medium
+find_first_negative,recursion,The statement explicitly requires recursion.,high
+recursive_break_finder,recursion,Activity explicitly requires or focuses on recursion.,medium
+equals_bst,binary_search_trees,Activity explicitly concerns a Binary Search Tree.,high
+order_statistic,sorting,The problem requires partitioning a sequence around its first element.,high
+mathematical_expression,unmapped,Requires further review; insufficient evidence for a confident approved-concept mapping.,review
+fibonacci,recursion,Activity explicitly requires or focuses on recursion.,medium
+queue_with_array,queues,Activity explicitly uses a queue.,high
+filter_linked_list,linked_lists,Activity explicitly concerns linked lists.,high
+frequency_element,hashing,Activity concerns hashing or frequency-based lookup.,medium
+queue_jumper,arrays,Primarily involves array rearrangement and element movement.,high
+hashset,hashing,Activity concerns hashing or frequency-based lookup.,medium
+sorted_insertion_first,sorting,Activity concerns sorting or partitioning.,high
+sorted_insertion_last,sorting,Activity concerns sorting or partitioning.,high
+recursive_insertion_sort,sorting,Activity concerns sorting or partitioning.,high
+invert_array,arrays,Activity explicitly concerns arrays or vectors.,medium
+invert_phrase,unmapped,Requires further review; insufficient evidence for a confident approved-concept mapping.,review
+invert_stack,stacks,Activity explicitly uses a stack.,high
+invert_stack_index,stacks,Activity explicitly uses a stack.,high
+invert_stack_without_queue,stacks,Activity explicitly uses a stack.,high
+is_heap,heaps,Activity explicitly concerns heaps.,high
+linked_list,queues,Activity explicitly uses a queue.,high
+adjacency_list,graphs,Activity concerns trees or graph representation.,medium
+mariana_and_books,unmapped,Full problem statement must be inspected before assigning a concept.,review
+adjacency_matrix,graphs,Activity concerns trees or graph representation.,medium
+max_bst,binary_search_trees,Activity explicitly concerns a Binary Search Tree.,high
+max_stack,stacks,Activity explicitly uses a stack.,high
+max_stack_index,stacks,Activity explicitly uses a stack.,high
+best_pivot,sorting,Activity concerns sorting or partitioning.,high
+merge_sort_step_by_step,sorting,Activity concerns sorting or partitioning.,high
+min_bst,binary_search_trees,Activity explicitly concerns a Binary Search Tree.,high
+move_impostor,sorting,Repositions an out-of-order element.,high
+move_n,sorting,Repositions multiple out-of-order elements.,high
+move_three,sorting,Repositions three out-of-order elements.,high
+sort_stack_inverting,stacks,Activity explicitly uses a stack.,high
+plates_sorting,sorting,Activity concerns sorting or partitioning.,high
+brackets,stacks,Activity explicitly uses a stack.,high
+stable_partition,sorting,Activity concerns sorting or partitioning.,high
+hoare_partitioning,sorting,Activity concerns sorting or partitioning.,high
+lomuto_partitioning,sorting,Activity concerns sorting or partitioning.,high
+lomuto_partitioning_last,sorting,Activity concerns sorting or partitioning.,high
+stack_with_array,stacks,Activity explicitly uses a stack.,high
+reverse_polish,stacks,Activity explicitly uses a stack.,high
+element_positions,arrays,Finds positions of an element in a sequence.,high
+recursive_power,recursion,Activity explicitly requires or focuses on recursion.,medium
+predecessor_bst,binary_search_trees,Activity explicitly concerns a Binary Search Tree.,high
+number_larger_elements_bst,binary_search_trees,Activity explicitly concerns a Binary Search Tree.,high
+number_smaller_elements_bst,binary_search_trees,Activity explicitly concerns a Binary Search Tree.,high
+quick_sort_step_by_step,sorting,Activity concerns sorting or partitioning.,high
+radix_sort,sorting,Activity concerns sorting or partitioning.,high
+radix_sort_two_digits,sorting,Activity concerns sorting or partitioning.,high
+radix_sort_three_digits,sorting,Activity concerns sorting or partitioning.,high
+removal_bst,binary_search_trees,Activity explicitly concerns a Binary Search Tree.,high
+remove_index_linkedlist,linked_lists,Activity explicitly concerns linked lists.,high
+rotations_bst,binary_search_trees,Activity explicitly concerns a Binary Search Tree.,high
+recursive_selection_sort,sorting,Activity concerns sorting or partitioning.,high
+selection_sort_step_by_step,sorting,Activity concerns sorting or partitioning.,high
+without_pair,arrays,Explicitly identifies a unique-frequency element in an unordered array.,high
+sum_leaves,binary_search_trees,Calculates the sum of BST leaf values.,high
+stooge_sort,sorting,Activity concerns sorting or partitioning.,high
+stopwords,unmapped,Requires further review; insufficient evidence for a confident approved-concept mapping.,review
+successor_bst,binary_search_trees,Activity explicitly concerns a Binary Search Tree.,high
+frequency_table,hashing,Activity concerns hashing or frequency-based lookup.,medium
+hash_table_chaining,hashing,Implements a hash table using chaining for collision resolution.,high
+hash_table_probing,hashing,Activity concerns hashing or frequency-based lookup.,medium
+master_theorem,recursion,Activity explicitly requires or focuses on recursion.,medium
+top_n,unmapped,Requires further review; insufficient evidence for a confident approved-concept mapping.,review
+tower_of_hanoi,recursion,Activity explicitly requires or focuses on recursion.,medium
+three_n_plus_one,unmapped,Requires further review; insufficient evidence for a confident approved-concept mapping.,review
+trim_linked_list,linked_lists,Activity explicitly concerns linked lists.,high
+swap_neighbors,arrays,Swaps neighbouring array elements.,high
+swap_neighbors_linked_list,linked_lists,Activity explicitly concerns linked lists.,high
+nearest_value_bst,binary_search_trees,Activity explicitly concerns a Binary Search Tree.,high
+circular_vector,arrays,Activity explicitly concerns arrays or vectors.,medium
+warm_up_dsa,arrays,Performs element-wise multiplication on a sequence.,high
+word_cloud,unmapped,Requires further review; insufficient evidence for a confident approved-concept mapping.,review
