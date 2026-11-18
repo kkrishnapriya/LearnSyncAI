@@ -1,0 +1,66 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20261117122527
+Username: ASUS\kkris
+RunAs User: ASUS\kkris
+Configuration Name: 
+Machine: ASUS (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 8272
+PSVersion: 5.1.26100.9818
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.9818
+BuildVersion: 10.0.26100.9818
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is final_test_results.txt
+PS C:\Users\kkris\OneDrive\Desktop\New folder> python test_evaluator.py
+        Dataset Label : 'Omission of formal O(n) linear bound and inversion count
+explanation'
+        Rule Output   : ['Omission of inner loop early-termination mechanism']
+    * Q_SRT_08 (omission):
+        Dataset Label : 'Omission of exact O(n) auxiliary vs O(log n) stack space
+bounds'
+        Rule Output   : ['Omission of recursive stack space bound for Quicksort']
+    * Q_HAS_02 (omission):
+        Dataset Label : 'Omission of worst-case collision analysis'
+        Rule Output   : ['Omission of worst-case collision degradation scenario']
+
+BKT Alignment Verification:
+ - Rule Compliance: 117/117 (100.00%)
+ - Rule: score >= 0.70 => bkt_outcome = 1; score < 0.70 => bkt_outcome = 0
+ - Status: Provisional rule pending approval from Member 1 and Member 3
+
+Execution Performance:
+ - Total Benchmark Elapsed Time: 12927.91 ms (12.93 s)
+ - Mean Latency per Answer:      110.49 ms
+ - Median Latency per Answer:    18.35 ms
+ - Min Latency per Answer:       12.07 ms
+ - Max Latency per Answer:       10814.83 ms
+==================================================================================
+=================================
+
+==================================================================================
+=================================
+Executing 15-Category Test Suite (test_evaluator.py)
+==================================================================================
+=================================
+...............
+----------------------------------------------------------------------
+Ran 15 tests in 0.636s
+
+OK
+PS C:\Users\kkris\OneDrive\Desktop\New folder> python test_rag_pipeline.py
+
+PS C:\Users\kkris\OneDrive\Desktop\New folder> python test_member2.py
+
+PS C:\Users\kkris\OneDrive\Desktop\New folder> python run_heldout_eval.py
+
+PS C:\Users\kkris\OneDrive\Desktop\New folder> Stop-Transcript
+**********************
+Windows PowerShell transcript end
+End time: 20261117123050
+**********************

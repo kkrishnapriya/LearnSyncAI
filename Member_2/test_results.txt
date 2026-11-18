@@ -1,0 +1,47 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20261117110150
+Username: ASUS\kkris
+RunAs User: ASUS\kkris
+Configuration Name: 
+Machine: ASUS (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 15912
+PSVersion: 5.1.26100.9818
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.9818
+BuildVersion: 10.0.26100.9818
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is test_results.txt
+PS C:\Users\kkris\OneDrive\Desktop\New folder> python test_evaluator.py
+
+PS C:\Users\kkris\OneDrive\Desktop\New folder> python test_rag_pipeline.py
+ - Total Tests:   22
+ - Passed Tests:  21
+ - Failed Tests:  0
+ - Skipped Tests: 1
+   * Skipped 'test_live_gemini_api_call': No real GEMINI_API_KEY detected in enviro
+nment or Colab secrets.
+===================================================================================
+================================
+PS C:\Users\kkris\OneDrive\Desktop\New folder> python test_member2.py
+.Could not reach the Hub (Cannot reach https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2: offline mode is enabled. To disable it
+, please unset the `HF_HUB_OFFLINE` environment variable.). Using cached commit hash for 'sentence-transformers/all-MiniLM-L6-v2'.
+Loading weights: 100%|████████████████████████████████████████████████████████████████████████████████████████████| 103/103 [00:00<00:00, 3357.79it/s]
+....Could not reach the Hub (Cannot reach https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2: offline mode is enabled. To disable
+ it, please unset the `HF_HUB_OFFLINE` environment variable.). Using cached commit hash for 'sentence-transformers/all-MiniLM-L6-v2'.
+Loading weights: 100%|████████████████████████████████████████████████████████████████████████████████████████████| 103/103 [00:00<00:00, 2037.30it/s]
+....
+----------------------------------------------------------------------
+Ran 9 tests in 10.952s
+
+OK
+PS C:\Users\kkris\OneDrive\Desktop\New folder> Stop-Transcript
+**********************
+Windows PowerShell transcript end
+End time: 20261117110829
+**********************

@@ -1,0 +1,27 @@
+question_id,student_answer,your_label,expected_misconception
+Q_ARR_01,"The items are stored next to each other, so the computer can jump straight to an index. If I add something at the start, the other items have to move along.",correct,
+Q_ARR_04,"When the buffer is full, a dynamic array allocates a larger block and copies the old elements. It grows by exactly one slot each time, so every insertion remains O(1).",incorrect,Assumes dynamic arrays grow by one slot and insertion is always O(1)
+Q_LL_01,"You have to start at the head and follow the links until you reach the item, but adding something at the beginning is quick because you just change the first link.",correct,
+Q_LL_04,A doubly linked list lets you move in both directions and makes it easier to remove a node.,partially_correct,Omission of the extra prev-pointer memory overhead and the condition for O(1) deletion
+Q_STK_01,A stack works like a pile of plates: the last one put on is the first one taken off. You add and remove things from the top.,partially_correct,Omission of O(1) push/pop complexity
+Q_STK_04,"When pushing, the top index is decreased; when popping, it is increased. Overflow occurs even when there are still unused array positions.",incorrect,Reverses stack top index updates and misstates the overflow condition
+Q_QUE_01,The first item added is the first one removed. New elements enter at the rear and removal happens at the front.,partially_correct,Omission of the O(1) enqueue and dequeue time complexities
+Q_QUE_04,"A circular queue wraps its front and rear indices using modulo arithmetic, so freed positions at the beginning can be reused instead of shifting all elements.",correct,
+Q_REC_01,"A function can call itself, but it needs a condition where it stops. Each call should get closer to that stopping point.",correct,
+Q_REC_04,A StackOverflowError happens when too many recursive calls are active and the call stack runs out of space.,partially_correct,Omission of how a base case and progress toward termination prevent excessive recursive depth
+Q_TRE_01,"A connected, acyclic tree with n vertices has exactly n minus one edges.",correct,
+Q_TRE_04,"Preorder visits root-left-right, inorder visits left-root-right, and postorder also visits the root first before its subtrees.",incorrect,Confuses postorder traversal with preorder traversal
+Q_BST_01,"Every key in a node's left subtree is smaller and every key in its right subtree is larger. Search is O(h), which becomes O(n) in a skewed tree.",correct,
+Q_BST_04,"For a node with two children, delete it and connect its left and right children directly to the former parent; the BST ordering will always remain valid.",incorrect,Assumes a two-child BST node can be removed by directly attaching both subtrees without successor or predecessor replacement
+Q_HEA_01,"In a max-heap each parent is at least as large as its children. Insertion adds the item at the next open leaf and sifts it upward, taking O(log n).",correct,
+Q_HEA_04,A heap stores every node as a separate object with explicit left-child and right-child pointers; array positions do not determine parent or child relationships.,incorrect,Believes array-based heaps require explicit pointers and do not use index relationships
+Q_SRT_01,"Comparison sorting has an Omega(n log n) lower bound. Merge sort has O(n log n) worst-case time, while quicksort can degrade to O(n squared) with poor pivots.",correct,
+Q_SRT_04,"Insertion sort is not adaptive: it always performs O(n squared) work, even on an already sorted list, because it must compare every pair.",incorrect,Believes insertion sort is not adaptive and remains quadratic on nearly sorted input
+Q_HAS_01,"A hash-table lookup is O(1) on average but O(n) in the worst case, when many keys collide and must be checked in the same bucket or chain.",correct,
+Q_HAS_04,"Separate chaining stores colliding keys in a collection attached to the same table index, so a bucket can contain multiple keys and the load factor can exceed one.",partially_correct,Omission of the lookup or insertion cost as the collision chain grows
+Q_GRP_01,"An adjacency list is preferable for a sparse graph because it stores only existing edges and uses O(V+E) space, unlike an adjacency matrix's O(V squared) space.",correct,
+Q_GRP_04,"Run BFS or DFS from one vertex and count the vertices reached; that count is the number of connected components, even if some vertices were never visited.",incorrect,Assumes one traversal from a single starting vertex identifies all connected components
+Q_BFS_01,"BFS uses a FIFO queue and explores vertices level by level, so in an unweighted graph it finds a path with the fewest edges.",correct,
+Q_BFS_04,The visited set marks vertices that have already been discovered so they are not added to the queue again.,partially_correct,Omission of how visited tracking prevents repeated exploration or non-termination around cycles
+Q_DFS_01,"DFS follows one branch as deeply as possible, then backtracks using a stack or recursive function calls.",correct,
+Q_DFS_04,A back edge from a vertex to an ancestor in the active DFS path indicates a cycle.,partially_correct,Omission of the other DFS edge classifications and their distinction from back edges
